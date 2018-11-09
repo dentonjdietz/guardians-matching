@@ -3,6 +3,11 @@
     max-height: 100vh;
     background-image: url(/images/game-board-bg.png);
     width: 100%;
+    @font-face {
+        font-family: 'guardians';
+        src: URL('/fonts/guardians-font.ttf') format('truetype');
+    }
+    font-family: 'guardians', sans-serif;
 
     .game-board {
         display: flex;
@@ -34,15 +39,29 @@
         background-size: contain;
         position: relative;
 
+        .top-bar {
+            top: 7%;
+            left: 10%;
+            position: absolute;
+            width: 70%;
+
+            ul {
+            display: flex;
+            justify-content: space-between;
+            color: rgb(255, 212, 94);
+            width: 100%;
+            list-style: none;
+            font-size: 1.2em;
+            }
+            
+        }
+
         h2 {
             position: absolute;
-            top: 5%;
+            top: 7%;
             left: 10%;
             color: rgb(228, 189, 62);
-            font: 
         }
-        
-        
     }
 
     .inner-board {

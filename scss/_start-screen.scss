@@ -1,3 +1,42 @@
 .start-screen {
     height: 100vh;
+    background-image: url(/images/start-screen.svg);
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'guardians', sans-serif;
+    color: white;
+
+    .guardians-start-logo {
+        width: 35%;
+        position: absolute;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+
+    .start-text {
+        width: 40%;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        line-height: 2em;
+    }
+
+    a {
+        color: #eb0548;
+        text-decoration: none;
+        font-size: 3em;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1%;
+        background-color: white;
+        border-radius: 25px;
+
+    }
 }
