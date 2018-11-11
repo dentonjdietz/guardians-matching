@@ -68,5 +68,15 @@
             left: 10%;
             color: rgb(228, 189, 62);
         }
+
+        .game {
+            width: 800px;
+            margin: 0 auto;
+            height: 900px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 15px;
+        }
     }
 }

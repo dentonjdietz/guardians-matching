@@ -1,0 +1,38 @@
+.card {
+    position: relative;
+    cursor: pointer;
+
+    img {
+        display: block;
+    }
+
+    .door {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        transition: transform s;
+    }
+
+    .door{
+        top: 0;
+        @at-root .open .door-up img {
+            transform: translateY(100%);
+            transition: 0.5s;
+        }
+    }
+
+    .card-image img {
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        border: rgba(253, 199, 50, 0.842) solid 6px;
+        border-radius: 7px;
+    }
+
+
+}

@@ -11,15 +11,9 @@ class Game {
         this.elCardImgContainer = $('.card-image');
         this.body = $('body');
         this.preventClicks = false;
-        this.musicEndGame = $('#music-end-game');
-        this.sFXmatchLength = 2;
-        this.sFXnoMatchLength = 2;
-        this.sFXendGameLength = 4;
         this.clickCounter = 0;
         this.turnCounter = 0;
         this.matchCounter = 0;
-        // Cheat code...enable for testing
-        //this.matchCounter = cards.length/2 - 1;
         this.revealedCards = [];
     }
 
@@ -46,28 +40,6 @@ class Game {
             $(this).append(img);
         
         });
-
-        // Initialize LowLag for SFX (Uses lowLag JS ( https://lowlag.alienbill.com ))
-        lowLag.init({'urlPrefix':'media/', 'sm2url': 'scripts/sm2/swf/', 'audioTagTimeToLive': 6000});
-        // Load SFX
-        // Door Open SFX
-        lowLag.load('sfx/door/sfx-star-wars-door-short.mp3', 'door');
-        // Card Match SFX
-        lowLag.load('sfx/match/clip-yoda-laugh-01.mp3', 'match-01');
-        lowLag.load('sfx/match/clip-yoda-laugh-01.mp3', 'match-02');
-        // Card Do Not Match SFX
-        lowLag.load('sfx/no-match/clip-emperor-oh-no.mp3', 'no-match-01');
-        lowLag.load('sfx/no-match/clip-emperor-yes.mp3', 'no-match-02');
-        lowLag.load('sfx/no-match/clip-emperor-good.mp3', 'no-match-03');
-
-        // End Game Messages
-        // Game Won - Yoda Message
-        lowLag.load('sfx/end-game/win/clip-yoda-flows-from-the-force.mp3', 'win-message-01');
-        // Game Lost - Emperor Message
-        lowLag.load('sfx/end-game/lose/clip-emperor-i-have-forseen.mp3', 'lose-message-01');
-        lowLag.load('sfx/end-game/lose/clip-emperor-training.mp3', 'lose-message-02');
-        lowLag.load('sfx/end-game/lose/clip-yoda-do-or-do-not.mp3', 'lose-message-03');
-        lowLag.load('sfx/end-game/lose/clip-yoda-why-you-fail.mp3', 'lose-message-04');
         
     }
 
@@ -172,21 +144,7 @@ class Game {
 
     endGame(){
 
-        alert('You win!!!');
-        /*
-        lowLag.play('win-message-01');
-        // Set Volumne of end game music
-        // [0] -> is needed as we need to access
-        // the raw JavaScript object and not the
-        // jQuery element object
-        this.musicEndGame[0].volume = 0;
-        // Delay Playing the music track by
-        // 1 second...and then fade up the volume        
-        setTimeout(() => {
-            this.musicEndGame[0].play();
-            this.musicEndGame.animate({volume: 0.7}, 6400);
-        }, 1000); 
-        */      
+        alert('You win!!!');   
         
     }
 
