@@ -144,7 +144,7 @@ class Game {
 
     endGame(){
 
-        alert('You win!!!');   
+        window.location.href = "/win-screen.html";
         
     }
 

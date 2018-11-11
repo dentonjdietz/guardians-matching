@@ -5,5 +5,18 @@
     background-color: black;
     background-size: 100%;
     background-repeat: no-repeat;
+    position: relative;
+
+    h1 {
+        color: white;
+        font-family: 'guardians', sans-serif;
+        font-size: 2vw;
+        position: absolute;
+        bottom: 6%;
+        left: 50%;
+        transform: translateX(-50%,);
+        border: 30px black solid;
+
+    }
 
 }

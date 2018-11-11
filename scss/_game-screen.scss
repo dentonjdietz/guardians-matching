@@ -1,3 +1,4 @@
+
 .game-screen {
     height: 100vh;
     max-height: 100vh;
@@ -34,7 +35,8 @@
         background-image: url(/images/gold-frame.svg);
         background-size: 95vh;
         background-repeat: no-repeat;
-        margin-top: 2.5%;
+        margin-top: 1%;
+        margin-bottom: 1%;
         margin-left: 2%;
         background-size: contain;
         position: relative;
@@ -70,9 +72,13 @@
         }
 
         .game {
-            width: 800px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-54%,-50%);
+            width: 620px;
             margin: 0 auto;
-            height: 900px;
+            height: 750px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
