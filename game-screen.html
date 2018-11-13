@@ -14,111 +14,48 @@
                 <img src="images/thanos.svg" alt="Thanos">
             </div>
             <div class="gold-frame">
-                <div class="top-bar">
-                <ul>
-                    <li>Attempts made:</li>
-                    <li>Attempts left:</li>
-                </ul>
-                </div>
-                <!-- <img src="images/gold-frame.svg" alt="gold frame"> -->
-                <div class="game">
-                        <div class="card card-01">
-                                        <div class="door">
-                                            <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
+                    <input type="button" value="Start"  onclick="startGame()" id="startButton">
+                    <input type="button" value="Stop"  onclick="stopGame()" id="stopButton">
+                    <h1>Whack a Thanos <span class="score">0</span></h1>
+                <div class="gameboard">
+                        <div class="hole hole1">
+                            <img src="/images/guardians-hole.svg" alt="Guardians emblem">
+                            <div class="mole"><img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet"></div>
                         </div>
-                        <div class="card card-02">
-                                        <div class="door">
-                                            <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
+                        <div class="hole hole2">
+                            <img src="/images/guardians-hole.svg" alt="Guardians emblem">
+                            <div class="mole"><img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet"></div>
                         </div>
-                        <div class="card card-03">
-                                        <div class="door">
-                                            <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-04">
-                                        <div class="door">
-                                            <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-05">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-06">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-07">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-08">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-09">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-10">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-11">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-12">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-13">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-14">
-                                    <div class="door">
-                                        <div class="door-up"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-15">
-                                    <div class="door">
-                                        <div class="door"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                            <div class="card card-16">
-                                    <div class="door">
-                                        <div class="door"><img src="images/door.png" alt="Guardians of the Galaxy in gold"></div>
-                                        </div>
-                                        <div class="card-image"></div>
-                            </div>
-                </div> <!-- end game div -->
+                        <div class="hole hole3">
+                            <img src="/images/guardians-hole.svg" alt="Guardians emblem">
+                            <div class="mole"><img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet"></div>
+                        </div>
+                        <div class="hole hole4">
+                            <img src="/images/guardians-hole.svg" alt="Guardians emblem">
+                            <div class="mole"><img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet"></div>
+                        </div>
+                        <div class="hole hole5">
+                            <img src="/images/guardians-hole.svg" alt="Guardians emblem">
+                            <div class="mole"><img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet"></div>
+                        </div>
+                        <div class="hole hole6">
+                            <img src="/images/guardians-hole.svg" alt="Guardians emblem">
+                            <div class="mole"><img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet"></div>
+                        </div>
+                        <div class="hole hole7">
+                            <img src="/images/guardians-hole.svg" alt="Guardians emblem">
+                            <div class="mole"><img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet"></div>
+                        </div>
+                        <div class="hole hole8">
+                            <img src="/images/guardians-hole.svg" alt="Guardians emblem">
+                            <div class="mole"><img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet"></div>
+                        </div>
+                        <div class="hole hole9">
+                            <img src="/images/guardians-hole.svg" alt="Guardians emblem">
+                            <div class="mole"><img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet"></div>
+                        </div>
+
+                </div> <!-- end tic board -->
             </div> <!-- end gold-frame-->
         </div> <!-- end game-board-->
     </div> <!-- end game-screen-->
@@ -127,7 +64,6 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
 </script>
-<script src="/scripts/cards-array.js"></script>
 <script src="/scripts/game-scripts.js"></script>
 </body>
 </html>
